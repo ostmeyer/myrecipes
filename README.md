@@ -1,28 +1,25 @@
-== README
+testing spec for recipes:
+name: string
+summary: text
+description: text
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- name must be present
+- name must be between 5 and less then 100 characters
+- summary must be present
+- summary must be between 10 characters and less than 150
+- description must be present
+- description must be between 20 and 500 characters
+- chef_id must be present
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+-------------------------------------------------------------------
+
+testing spec for chefs:
+chefname: string
+email: string
+
+- chefname must be present
+- chefname must be between 3 and 40 characters
+- email must be present
+- email must be unique (since we'll use this for logins later)
+- email must be valid
