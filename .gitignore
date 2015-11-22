@@ -17,3 +17,6 @@
 
 # ignore all cloud9 and hidden files:
 .c9/
+
+# ignore test image files:
+test/test_images/*

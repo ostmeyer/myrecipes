@@ -17,7 +17,7 @@ class RecipesController < ApplicationController
 
     if @recipe.save
       flash[:success] = "Your recipe was created successfully!"
-      redirect_to recipe_path
+      redirect_to recipes_path
     
     else
       render :new
@@ -44,7 +44,7 @@ class RecipesController < ApplicationController
   private
 
     def recipe_params
-      params.require(:recipe).permit(:name, :summary, :description)
+      params.require(:recipe).permit(:name, :summary, :description, :picture)
     end
 
 
