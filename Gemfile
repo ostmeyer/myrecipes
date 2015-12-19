@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.4' # used for heroku
+group :production do
+  ruby '2.1.4' # used for heroku
+end
 
 gem 'rails', '4.1.6'
 gem 'sass-rails'#, '~> 4.0.3'
